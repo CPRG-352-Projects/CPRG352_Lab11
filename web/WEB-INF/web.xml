@@ -47,11 +47,11 @@
     <env-entry>
         <env-entry-name>webmail-username</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>sender_email_account@gmail.com</env-entry-value>
+        <env-entry-value>acera8821@gmail.com</env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>webmail-password</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>password_goes_here</env-entry-value>
+        <env-entry-value>Rv5O3n$4Qfn9</env-entry-value>
     </env-entry>
 </web-app>
