@@ -29,6 +29,15 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        AccountService as = new AccountService();
+        
+        String forgot = request.getParameter("forgot");
+        
+        if(forgot != null) {
+            response.sendRedirect("forgot");
+            return;
+        }
+        
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         
@@ -37,7 +46,6 @@ public class LoginServlet extends HttpServlet {
         cookie.setMaxAge(60 * 60 * 24 * 365 * 3);
         response.addCookie(cookie);
         
-        AccountService as = new AccountService();
         String path = getServletContext().getRealPath("/WEB-INF");
         User user = as.login(email, password, path);
         

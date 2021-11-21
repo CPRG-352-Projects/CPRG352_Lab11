@@ -13,5 +13,9 @@
             password: <input type="password" name="password"><br>
             <input type="submit" value="Sign in">
         </form>
+        <form action="forgot" method="post">
+            <input type="submit" value="Forgot Password">
+            <input type="hidden" name="forgot" value="true">
+        </form>
     </body>
 </html>
